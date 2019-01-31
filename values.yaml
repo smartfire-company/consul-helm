@@ -191,6 +191,9 @@ syncCatalog:
   #   if it doesn't exist, it will use the node's InternalIP address instead.
   nodePortSyncType: ExternalFirst
 
+  # aclToken configures the token used by the consul-k8s
+  aclToken: "00000000-0000-0000-0000-000000000000"
+
 # ConnectInject will enable the automatic Connect sidecar injector.
 connectInject:
   enabled: false

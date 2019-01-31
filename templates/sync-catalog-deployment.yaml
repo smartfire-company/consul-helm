@@ -68,4 +68,7 @@ spec:
                 {{- if .Values.syncCatalog.k8sTag }}
                 -consul-k8s-tag={{ .Values.syncCatalog.k8sTag }}
                 {{- end }}
+                {{- if .Values.syncCatalog.aclToken }}
+                -token={{ .Values.syncCatalog.aclToken }}
+                {{- end }}
 {{- end }}
